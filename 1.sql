@@ -1,0 +1,1 @@
+select pokemon.identifier from pokemon join pokemon_species on pokemon_species.id = pokemon.species_id where is_legendary > 0 order by pokemon.identifier;

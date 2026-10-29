@@ -1,0 +1,2 @@
+select distinct pokemon_species.identifier from pokemon_species join pokemon_habitats on pokemon_habitats.id = pokemon_species.habitat_id join pokemon_egg_groups on pokemon_egg_groups.species_id = pokemon_species.id join egg_groups on egg_groups.id = pokemon_egg_groups.egg_group_id where pokemon_habitats.identifier = 'urban' or egg_groups.identifier = 'humanshape' order by pokemon_species.identifier;
+
